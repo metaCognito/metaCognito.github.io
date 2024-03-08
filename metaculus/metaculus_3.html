@@ -5,7 +5,17 @@
     <title>Metaculus 3</title>
 </head>
 <body>
-    <h1>What will Reddit Inc.'s market capitalization be after its first day of trading, in USD?</h1>
+    <h1><a href="https://www.metaculus.com/questions/21584/reddit-inc-market-cap-after-ipo/">Will Reddit Inc.'s market capitalization be after its first day of trading, in USD?</a></h1>
+    <p>Initial attempt to solve the question was to go through the financial statements subnmitted by Reddit and build something called a Dicounted Cash Flow Model to get the valuation for the company.</p>
+    <p>I'll add the work done in that direction, however there were too many variables and no concrete results were achieved. It will be helpful to go theough the model and understand the terms mentioned in it.</p>
+    <p>Moving onto the second method where I consulted the news related to the IPO. Various sources which I shall add on here gave estimates from $4.5B to $6.5B for the valuation of Reddit.</p>
+    <p>Since the question asks what the value will be after one day of trading, we refer to an article that shows us the results of many companies after one day of their IPOs</p>
+    <p>Using these two datasets we can generate two random variables X and Y. X refers to the initial valuation and Y refers to the multiplying factor post day 1.</p>
+    <h3>Estimating X</h3>
+    <p>Our initial range for X was $4.5B to $6.5B, however since the company is looking for a $5B valuation, we can shift our estimate(or lower it) to be closer to 5.</p>
+    <p>We assume a uniform distribution from $4.4B to $6B, and linearly taper off from both ends to $4B and $6.4B respectively. This is our estimated probability density function(pdf) for X</p>
+    <h3>Estimating Y</h3>
+    <p>This article gives us an idea of the average performnance of IPOs over the years, we take the average performance over the years discounting COVID years as abberations.</p> 
     <p>Refer to the following <a href="https://www.desmos.com/calculator/tvnsqxtpop">link</a> to dynamically play with the graphs</p>
 </body>
 </html>
